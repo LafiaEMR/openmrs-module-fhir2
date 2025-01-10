@@ -981,7 +981,7 @@
         <dropUniqueConstraint constraintName="target_uuid"  tableName="fhir_reference" uniqueColumns="target_uuid"/>  
     </changeSet>
 
-    <changeSet id="fix_target_uuid_column" author="moses_mutesa" dbms="postgresql">
+    <changeSet id="fix_target_uuid_column_postgres" author="moses_mutesa" dbms="postgresql">
         <preConditions onFail="MARK_RAN" onError="WARN">
             <tableExists tableName="fhir_reference"/>
             <columnExists tableName="fhir_reference" columnName="target_uuid"/>
