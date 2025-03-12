@@ -35,7 +35,7 @@ public class FhirConceptSource extends BaseOpenmrsMetadata {
 	
 	@EqualsAndHashCode.Include
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "fhir_concept_source_id")
 	private Integer id;
 	
